@@ -1,6 +1,6 @@
-import { Body, Controller, Logger, Post } from '@nestjs/common';
-import { AppService } from './app.service';
-import { ILogin } from './login';
+import { Body, Controller, Post } from '@nestjs/common';
+import { ILogin } from '../models/login';
+import { AppService } from '../services/app.service';
 
 @Controller()
 export class AppController {
